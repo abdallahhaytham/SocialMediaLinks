@@ -1,0 +1,372 @@
+﻿body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* نوع الخطوط */
+    font-size: 18px; /* حجم الخط */
+    background-color: #f7f7f7; /* لون خلفية الصفحة */
+}
+
+* {
+    margin: 0px; /* يلغي أي مسافة خارجية افتراضية */
+    padding: 0px; /* يلغي أي مسافة داخلية افتراضية */
+    box-sizing: border-box; /* بيحسب الـ padding والـ border جوه العرض */
+}
+
+.container {
+    min-width: 500px; /* أقل عرض للكونتينر */
+}
+
+.navbar {
+    background-color: #cacaca; /* لون خلفية شريط التنقل */
+    padding: 10px; /* مسافة داخلية */
+    box-shadow: 0px 1px 2px 2px #cacaca; /* ظل تحت الناف بار */
+}
+
+.navbar-brand {
+    margin: 0px 30px 5px 5px; /* مسافات حوالين اللوجو أو العنوان */
+    font-size: 1.1em; /* حجم الخط */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* نوع الخط */
+}
+
+.navbar > ul {
+    list-style-type: none; /* يشيل شكل النقاط من الليست */
+    width: 100%; /* عرض القائمة */
+}
+
+    .navbar > ul > li {
+        width: 100%; /* كل عنصر ياخد العرض كله (في الموبايل) */
+    }
+
+        .navbar > ul > li > a:link, .navbar > ul > li > a:visited {
+            padding: 4px 8px; /* مسافة داخلية للرابط */
+            cursor: pointer; /* شكل المؤشر يبقى يد */
+            border-radius: 6px; /* حواف مدورة */
+            transition: background-color 0.4s; /* حركة تغيير اللون */
+            display: inline-block; /* يعامل الرابط كعنصر بلوكي صغير */
+            margin: 0px 3px; /* مسافة بين الروابط */
+            color: #1383a4; /* لون النص */
+            text-decoration: none; /* يشيل الخط اللي تحت الرابط */
+        }
+
+        .navbar > ul > li > a:hover {
+            background-color: #ffffff; /* لون الخلفية عند المرور */
+            color: #086581; /* لون النص عند المرور */
+        }
+
+.nav-active {
+    background-color: #ececec; /* لون الخلفية للرابط النشط */
+}
+
+.page-content {
+    min-height: 90vh; /* ارتفاع يغطي 90% من الشاشة */
+    padding: 15px 20px; /* مسافات داخلية */
+}
+
+.full-size-height {
+    min-height: 100vh; /* يغطي طول الشاشة كله */
+}
+
+.table {
+    border-collapse: collapse; /* يدمج حدود الجدول */
+    border: 1px solid #ffffff; /* لون الحدود */
+    padding: 5px; /* مسافة داخلية */
+    box-shadow: 0px 0px 4px 2px #e4e4e4; /* ظل */
+    margin: 10px 0px; /* مسافة فوق وتحت */
+    margin: auto; /* توسيط الجدول */
+}
+
+    .table thead {
+        background-color: #bcd5c6; /* خلفية رأس الجدول */
+        color: #000000; /* لون الخط */
+    }
+
+        .table thead th {
+            padding: 5px 10px; /* مسافة داخلية */
+            text-align: left; /* محاذاة النص لليسار */
+        }
+
+    .table tbody td {
+        padding: 6px 10px; /* مسافة داخلية للخلية */
+    }
+
+    .table tbody tr {
+        transition: background-color 0.4s, color 0.3s; /* حركة عند التغيير */
+        background-color: #efefef; /* لون الصفوف */
+        border-bottom: 1px solid #ffffff; /* خط تحت كل صف */
+    }
+
+        .table tbody tr:hover {
+            background-color: #83b8cb; /* لون عند المرور */
+        }
+
+.w-25 {
+    width: 25%;
+}
+/* عرض 25% */
+.w-50 {
+    width: 50%;
+}
+/* عرض 50% */
+.w-75 {
+    width: 75%;
+}
+/* عرض 75% */
+.w-90 {
+    width: 90%;
+}
+/* عرض 90% */
+.w-100 {
+    width: 100%;
+}
+/* عرض 100% */
+
+.mt {
+    margin-top: 10px;
+}
+/* مسافة فوق */
+.mb {
+    margin-bottom: 10px;
+}
+/* مسافة تحت */
+.ml {
+    margin-left: 10px;
+}
+/* مسافة يسار */
+.mr {
+    margin-right: 10px;
+}
+/* مسافة يمين */
+
+.pt {
+    padding-top: 10px;
+}
+/* مسافة داخلية فوق */
+.pb {
+    padding-bottom: 10px;
+}
+/* مسافة داخلية تحت */
+.pl {
+    padding-left: 10px;
+}
+/* مسافة داخلية يسار */
+.pr {
+    padding-right: 10px;
+}
+/* مسافة داخلية يمين */
+
+.grey-back {
+    background-color: #dcdcdc;
+}
+/* خلفية رمادي */
+.white-back {
+    background-color: #ffffff;
+}
+/* خلفية أبيض */
+.blue-back {
+    background-color: #9ad3f7;
+}
+/* خلفية أزرق فاتح */
+
+.text-green {
+    color: #0a8438;
+}
+/* نص أخضر */
+.text-red {
+    color: #ff0000;
+}
+/* نص أحمر */
+
+.text-left {
+    text-align: left;
+}
+/* نص لليسار */
+.text-right {
+    text-align: right;
+}
+/* نص لليمين */
+.text-center {
+    text-align: center;
+}
+/* نص في المنتصف */
+
+.margin-auto {
+    margin: auto;
+}
+/* يوسّط العنصر */
+.float-left {
+    float: left;
+}
+/* يحرك العنصر لليسار */
+.clear {
+    clear: both;
+}
+/* يمنع الطفو */
+
+.list-container {
+    margin-top: 9px;
+}
+/* مسافة فوق القائمة */
+
+.list {
+    list-style-type: none; /* يشيل النقاط */
+    background-color: #ececec; /* لون خلفية القائمة */
+    border: 1px solid #ececec; /* حدود */
+    border-radius: 8px; /* حواف مدورة */
+}
+
+    .list > li {
+        padding: 8px 12px; /* مسافة داخلية */
+        background-color: #ffffff; /* لون الخلفية */
+        margin: 3px 2px; /* مسافة بين العناصر */
+        border-radius: 5px; /* حواف مدورة */
+        transition: background-color 0.3s, color 0.3s; /* حركة */
+    }
+
+        .list > li:hover {
+            background-color: #1383a4; /* خلفية عند المرور */
+            color: #ffffff; /* لون النص عند المرور */
+        }
+
+.footer-content {
+    background-color: #bfbfbf; /* خلفية الفوتر */
+    color: #000000; /* لون النص */
+    padding: 20px; /* مسافة داخلية */
+    text-align: center; /* النص في النص */
+}
+
+.header {
+    background-color: #055c87; /* خلفية الهيدر */
+    color: #ffffff; /* لون النص */
+    padding: 20px; /* مسافة داخلية */
+    text-align: center; /* محاذاة النص للمنتصف */
+}
+
+.box {
+    margin: 10px 20px; /* مسافة خارجية */
+    padding: 15px; /* مسافة داخلية */
+    border-radius: 8px; /* حواف مدورة */
+    border: 2px solid #d3d1d1; /* حدود */
+    box-shadow: 0px 0px 3px 2px #ffffff; /* ظل */
+}
+
+.flex {
+    display: flex; /* يستخدم الفليكس بوكس */
+    flex-wrap: wrap; /* العناصر تنزل سطر جديد لو مفيش مكان */
+    align-content: stretch; /* توزيع المحتوى */
+    align-items: stretch; /* يمدد العناصر */
+}
+
+    .flex > div {
+        padding: 15px; /* مسافة داخلية للعناصر */
+    }
+
+.flex-1 {
+    flex: 1 auto;
+}
+/* العنصر ياخد مساحة مرنة 1 */
+.flex-2 {
+    flex: 2 auto;
+}
+/* مرونة 2 */
+.flex-3 {
+    flex: 3 auto;
+}
+/* مرونة 3 */
+.flex-4 {
+    flex: 4 auto;
+}
+/* مرونة 4 */
+.flex-5 {
+    flex: 5 auto;
+}
+/* مرونة 5 */
+.flex-6 {
+    flex: 6 auto;
+}
+/* مرونة 6 */
+
+a:link, a:visited {
+    color: blue; /* لون الروابط */
+}
+
+a.link-hover:link {
+    padding: 5px; /* مسافة داخلية */
+    border-radius: 9px; /* حواف مدورة */
+    transition: background-color 0.2s; /* حركة */
+}
+
+a.link-hover:hover {
+    background-color: #e5e5e5; /* خلفية عند المرور */
+}
+
+.button {
+    padding: 8px 12px; /* مسافة داخلية */
+    border: 2px solid #cacaca; /* حدود */
+    border-radius: 8px; /* حواف مدورة */
+    outline: 3px solid #ffffff; /* خط خارجي */
+    font-size: 101%; /* حجم الخط */
+}
+
+.button-blue-back {
+    background-color: #3a81bd; /* خلفية زر أزرق */
+    color: #ffffff; /* نص أبيض */
+    border: 2px solid #3f80ca; /* حدود */
+}
+
+    .button-blue-back:hover {
+        background-color: #1274c7; /* زر أزرق غامق عند المرور */
+    }
+
+.button-green-back {
+    background-color: #088e36; /* خلفية زر أخضر */
+    color: #ffffff; /* نص أبيض */
+    border: 2px solid #73d695; /* حدود */
+}
+
+    .button-green-back:hover {
+        background-color: #066627; /* أخضر غامق عند المرور */
+    }
+
+.button-red-back {
+    background-color: #cb511e; /* خلفية زر أحمر */
+    color: #ffffff; /* نص أبيض */
+    border: 2px solid #e49776; /* حدود */
+}
+
+    .button-red-back:hover {
+        background-color: #96370f; /* أحمر غامق عند المرور */
+    }
+
+.form-input {
+    padding: 8px 10px; /* مسافة داخلية */
+    font-size: 105%; /* حجم النص */
+    border-radius: 8px; /* حواف مدورة */
+    border: 1px solid #d0d0d0; /* حدود */
+    width: 100%; /* عرض كامل */
+    transition: box-shadow 0.2s; /* حركة عند التركيز */
+}
+
+    .form-input:focus {
+        outline: none; /* يشيل الإطار الأزرق الافتراضي */
+        border: 1px solid #245eb0; /* يغير لون الحدود */
+        box-shadow: 0px 0px 4px 0px #1383a4; /* يضيف ظل عند التركيز */
+    }
+
+.form-label {
+    display: inline-block; /* يحول الليبل لعنصر بلوكي صغير */
+}
+
+@media screen and (min-width: 1000px) {
+    .navbar-brand {
+        display: inline-block; /* يظهر اللوجو جنب القائمة */
+        margin-bottom: 0px; /* يشيل المسافة تحت */
+    }
+
+    .navbar > ul {
+        display: inline-block; /* يحط الليست جنب اللوجو */
+        width: auto; /* العرض حسب المحتوى */
+    }
+
+        .navbar > ul > li {
+            display: inline-block; /* يخلي العناصر أفقية */
+            width: auto; /* العرض حسب النص */
+        }
+}
